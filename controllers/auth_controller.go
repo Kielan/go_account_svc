@@ -2,9 +2,10 @@ package controllers
 
 import (
 	"encoding/json"
-	"github/kielan/go_account_svc/models"
-	"github/kielan/go_account_svc/services"
 	"net/http"
+
+	"github.com/kielan/go_account_svc/models"
+	"github.com/kielan/go_account_svc/services"
 )
 
 func Login(w http.ResponseWriter, r *http.Request) {

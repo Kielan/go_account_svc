@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"api.jwt.auth/api/parameters"
-	"api.jwt.auth/core/authentication"
-	"api.jwt.auth/services/models"
 	jwt "github.com/dgrijalva/jwt-go"
+
+	"github.com/go_account_svc/api/parameters"
+	"github.com/go_account_svc/core/authentication"
+	"github.com/go_account_svc/services/models"
 )
 
 func Login(requestUser *models.User) (int, []byte) {
