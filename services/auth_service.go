@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/kielan/go_account_svc/api/parameters"
 
-	"github.com/go_account_svc/api/parameters"
-	"github.com/go_account_svc/core/authentication"
-	"github.com/go_account_svc/services/models"
+	"github.com/kielan/go_account_svc/core/authentication"
+	"github.com/kielan/go_account_svc/models"
 )
 
 func Login(requestUser *models.User) (int, []byte) {
